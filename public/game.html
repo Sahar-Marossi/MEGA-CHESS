@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MEGA-CHESS</title>
 
+  </head>
+  <body>
+    <main>
+        <!-- section usage?? -->
+        <section id="buttons">
+            <form action="/forfeit" method="get">
+              <button type="submit">Forfeit</button>    <!--are buttons done correctly?-->
+            </form>
+        </section>
+
+      
+      <section id="topStatus">
+          <p>You</p>
+          <p>Opponent</p>
+      </section>
+
+      <section id="chessBoard">
+        
+        <div class="chessBoard"></div>
+
+        <!-- How to efficiently make a chess board? will we have to declare each piece and square separately? -->
+        <img id="whitePawn" src=""> <!--WHITE PIECES HERE-->
+        <img id="whiteRook" src="">
+        <img id="whiteKnight" src="">
+        <img id="whiteBishop" src="">
+        <img id="whiteQueen" src="">
+        <img id="whiteKing" src="">
+
+        <img id="blackPawn" src=""> <!--BLACK PIECES HERE-->
+        <img id="blackRook" src="">
+        <img id="blackeKnight" src="">
+        <img id="blackBishop" src="">
+        <img id="blackQueen" src="">
+        <img id="blackKing" src="">
+
+
+      </section>
+
+      <section id="time">
+        <img src=""> <!--CLOCK IMAGE HERE-->
+        <div id="timer"></div> <!--TIME STATUS-->
+      </section>
+
+      <section id="player1Capture">
+          <p>Your captured pieces</p>
+          <div id='player1Pieces'></div>
+      </section>
+
+      <section id="player2Capture">
+          <p>Opponent's captured pieces</p>
+          <div id='player2Pieces'></div>
+    </section>
+
+      <section id="bottomStatus">
+        <div id='turn'></div><!--IT IS YOUR/THE OPPONENTS TURN-->
+      </section>
+
+
+    </main>
+
+  </body>
+</html>
