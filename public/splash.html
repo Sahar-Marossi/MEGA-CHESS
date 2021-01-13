@@ -8,10 +8,10 @@
       <header>
         <h1>MEGA-CHESS</h1>
         <img src="data/Title.png">
-        <img src="">    <!--LOGO HERE-->
+        <img src="data/logo.png">    <!--LOGO HERE-->
       </header>
 
-      <section id="buttons">
+      <div id="buttons">
 
           <form action="/play" method="get">
             <button type="submit">PLAY</button>
@@ -19,21 +19,29 @@
           
           <a href="https://en.wikipedia.org/wiki/Rules_of_chess#Movement" title="How to play" target="blank"><button>HELP</button></a>
 
-      </section>
+      </div>
       
-      <section id="stats">
-        <div>Ongoing games: <span>0</span></div>     <!-- How to insert values of stats?? -->
-        <div>Aborted games: <span>0</span></div>
-        <div>Completed games: <span>0</span></div>
-      </section>
+      <div id="stats">
+        <ul id = "list">
+        <div>
+          <li>Ongoing games: 0</li>
+          </div>     
+        <div>
+          <li>Aborted games: 0</li>
+          </div>
+        <div>
+          <li>Completed games: 0</li>
+          </div>
+        </ul>
+      </div>
       
-      <section id="left">
-        <img src=""> <!--LEFT CHESS PIECE HERE-->
-      </section>
+      <div id="left">
+        <img src="data/rook.png"> <!--LEFT CHESS PIECE HERE-->
+      </div>
       
-      <section id="right">
-        <img src=""> <!-- RIGHT CHESS PIECE HERE-->
-      </section>
+      <div id="right">
+        <img src="data/bishop.png"> <!-- RIGHT CHESS PIECE HERE-->
+      </div>
    
     </main>
   </body>
