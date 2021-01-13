@@ -6,162 +6,165 @@
   </head>
   <body>
     <main>
-        <!-- section usage?? -->
-      <section id="buttons">
+
+      <div id="buttons">
         <form action="/forfeit" method="get">
-          <button type="submit">Forfeit</button>    <!--are buttons done correctly?-->
+          <button type="submit">Forfeit</button>    
         </form>
-      </section>
-
-      <section id="topStatus">
-          <p><span>You</span></p>
-          <p><span>Opponent</span></p>
-      </section>
-
-      <section id="chessBoard"> 
-
-      <div id="numbered-board">
-      <div class="rowNumbers">
-        <div><text class="text eight">8</text></div>
-        <div><text class="text seven">7</text></div>
-        <div><text class="text six">6</text></div>
-        <div><text class="text five">5</text></div>
-        <div><text class="text four">4</text></div>
-        <div><text class="text three">3</text></div>
-        <div><text class="text two">2</text></div>
-        <div><text class="text one">1</text></div>
       </div>
 
-      <div class="colNumbers">
-        <div class="textletter a"><text>a</text></div>
-        <div class="textletter b"><text>b</text></div>
-        <div class="textletter c"><text>c</text></div>
-        <div class="textletter d"><text>d</text></div>
-        <div class="textletter e"><text>e</text></div>
-        <div class="textletter f"><text>f</text></div>
-        <div class="textletter g"><text>g</text></div>
-        <div class="textletter h"><text>h</text></div>
+      <div id="topStatus">
+          <div id="box1">You</div>
+          <div id="box2">Opponent</div>
       </div>
 
-      <div id="chessboard">
-        <!--Initial setup for the chessboard, including starting positions of black/white pieces-->
-        <div class="row8">
-          <div class="tile" id="a8">♜</div>
-          <div class="tile blue" id="b8">♞</div>
-          <div class="tile" id="c8"> ♝</div>
-          <div class="tile blue" id="d8">♛</div>
-          <div class="tile" id="e8">♚</div>
-          <div class="tile blue" id="f8"> ♝</div>
-          <div class="tile" id="g8">♞</div>
-          <div class="tile blue" id="h8">♜</div>
+      <div id="gameBoard"> 
+
+        <div class="rowNumbers">
+          <div><text class="text eight">8</text></div>
+          <div><text class="text seven">7</text></div>
+          <div><text class="text six">6</text></div>
+          <div><text class="text five">5</text></div>
+          <div><text class="text four">4</text></div>
+          <div><text class="text three">3</text></div>
+          <div><text class="text two">2</text></div>
+          <div><text class="text one">1</text></div>
         </div>
 
-        <div class="row7">
-          <div class="tile blue" id="a7">♟</div>
-          <div class="tile" id="b7">♟</div>
-          <div class="tile blue" id="c7">♟</div>
-          <div class="tile" id="d7">♟</div>
-          <div class="tile blue" id="e7">♟</div>
-          <div class="tile" id="f7">♟</div>
-          <div class="tile blue" id="g7">♟</div>
-          <div class="tile" id="h7">♟</div>
+        <div class="colNumbers">
+          <div class="textletter a"><text>a</text></div>
+          <div class="textletter b"><text>b</text></div>
+          <div class="textletter c"><text>c</text></div>
+          <div class="textletter d"><text>d</text></div>
+          <div class="textletter e"><text>e</text></div>
+          <div class="textletter f"><text>f</text></div>
+          <div class="textletter g"><text>g</text></div>
+          <div class="textletter h"><text>h</text></div>
         </div>
 
-        <div class="row6">
-          <div class="tile" id="a6"></div>
-          <div class="tile blue" id="b6"></div>
-          <div class="tile" id="c6"></div>
-          <div class="tile blue" id="d6"></div>
-          <div class="tile" id="e6"></div>
-          <div class="tile blue" id="f6"></div>
-          <div class="tile" id="g6"></div>
-          <div class="tile blue" id="h6"></div>
-        </div>
+        <div id="chessboard">
+          <!--Initial setup for the chessboard, including starting positions of black/white pieces-->
+          <div class="row8">
+            <div class="tile" id="a8">♜</div>
+            <div class="tile blue" id="b8">♞</div>
+            <div class="tile" id="c8"> ♝</div>
+            <div class="tile blue" id="d8">♛</div>
+            <div class="tile" id="e8">♚</div>
+            <div class="tile blue" id="f8"> ♝</div>
+            <div class="tile" id="g8">♞</div>
+            <div class="tile blue" id="h8">♜</div>
+          </div>
 
-        <div class="row5">
-          <div class="tile blue" id="a5"></div>
-          <div class="tile" id="b5"></div>
-          <div class="tile blue" id="c5"></div>
-          <div class="tile" id="d5"></div>
-          <div class="tile blue" id="e5"></div>
-          <div class="tile" id="f5"></div>
-          <div class="tile blue" id="g5"></div>
-          <div class="tile" id="h5"></div>
-        </div>
+          <div class="row7">
+            <div class="tile blue" id="a7">♟</div>
+            <div class="tile" id="b7">♟</div>
+            <div class="tile blue" id="c7">♟</div>
+            <div class="tile" id="d7">♟</div>
+            <div class="tile blue" id="e7">♟</div>
+            <div class="tile" id="f7">♟</div>
+            <div class="tile blue" id="g7">♟</div>
+            <div class="tile" id="h7">♟</div>
+          </div>
 
-        <div class="row4">
-          <div class="tile" id="a4"></div>
-          <div class="tile blue" id="b4"></div>
-          <div class="tile" id="c4"></div>
-          <div class="tile blue" id="d4"></div>
-          <div class="tile" id="e4"></div>
-          <div class="tile blue" id="f4"></div>
-          <div class="tile" id="g4"></div>
-          <div class="tile blue" id="h4"></div>
-        </div>
+          <div class="row6">
+            <div class="tile" id="a6"></div>
+            <div class="tile blue" id="b6"></div>
+            <div class="tile" id="c6"></div>
+            <div class="tile blue" id="d6"></div>
+            <div class="tile" id="e6"></div>
+            <div class="tile blue" id="f6"></div>
+            <div class="tile" id="g6"></div>
+            <div class="tile blue" id="h6"></div>
+          </div>
 
-        <div class="row3">
-          <div class="tile blue" id="a3"></div>
-          <div class="tile" id="b3"></div>
-          <div class="tile blue" id="c3"></div>
-          <div class="tile" id="d3"></div>
-          <div class="tile blue" id="e3"></div>
-          <div class="tile" id="f3"></div>
-          <div class="tile blue" id="g3"></div>
-          <div class="tile" id="h3"></div>
-        </div>
+          <div class="row5">
+            <div class="tile blue" id="a5"></div>
+            <div class="tile" id="b5"></div>
+            <div class="tile blue" id="c5"></div>
+            <div class="tile" id="d5"></div>
+            <div class="tile blue" id="e5"></div>
+            <div class="tile" id="f5"></div>
+            <div class="tile blue" id="g5"></div>
+            <div class="tile" id="h5"></div>
+          </div>
 
-        <div class="row2">
-          <div class="tile" id="a2">♙</div>
-          <div class="tile blue" id="b2">♙</div>
-          <div class="tile" id="c2">♙</div>
-          <div class="tile blue" id="d2">♙</div>
-          <div class="tile" id="e2">♙</div>
-          <div class="tile blue" id="f2">♙</div>
-          <div class="tile" id="g2">♙</div>
-          <div class="tile blue" id="h2">♙</div>
-        </div>
+          <div class="row4">
+            <div class="tile" id="a4"></div>
+            <div class="tile blue" id="b4"></div>
+            <div class="tile" id="c4"></div>
+            <div class="tile blue" id="d4"></div>
+            <div class="tile" id="e4"></div>
+            <div class="tile blue" id="f4"></div>
+            <div class="tile" id="g4"></div>
+            <div class="tile blue" id="h4"></div>
+          </div>
 
-        <div class="row1">
-          <div class="tile blue" id="a1">♖</div>
-          <div class="tile" id="b1">♘</div>
-          <div class="tile blue" id="c1">♗</div>
-          <div class="tile" id="d1">♕</div>
-          <div class="tile blue" id="e1">♔</div>
-          <div class="tile" id="f1">♗</div>
-          <div class="tile blue" id="g1">♘</div>
-          <div class="tile" id="h1">♖</div>
+          <div class="row3">
+            <div class="tile blue" id="a3"></div>
+            <div class="tile" id="b3"></div>
+            <div class="tile blue" id="c3"></div>
+            <div class="tile" id="d3"></div>
+            <div class="tile blue" id="e3"></div>
+            <div class="tile" id="f3"></div>
+            <div class="tile blue" id="g3"></div>
+            <div class="tile" id="h3"></div>
+          </div>
+
+          <div class="row2">
+            <div class="tile" id="a2">♙</div>
+            <div class="tile blue" id="b2">♙</div>
+            <div class="tile" id="c2">♙</div>
+            <div class="tile blue" id="d2">♙</div>
+            <div class="tile" id="e2">♙</div>
+            <div class="tile blue" id="f2">♙</div>
+            <div class="tile" id="g2">♙</div>
+            <div class="tile blue" id="h2">♙</div>
+          </div>
+
+          <div class="row1">
+            <div class="tile blue" id="a1">♖</div>
+            <div class="tile" id="b1">♘</div>
+            <div class="tile blue" id="c1">♗</div>
+            <div class="tile" id="d1">♕</div>
+            <div class="tile blue" id="e1">♔</div>
+            <div class="tile" id="f1">♗</div>
+            <div class="tile blue" id="g1">♘</div>
+            <div class="tile" id="h1">♖</div>
+          </div>
         </div>
 
       </div>
-      </div>
-    
-      </section>
 
 
-      <section id="time">
-        <img src=""> <!--CLOCK IMAGE HERE-->
+      <div id="time"> <!--TIME STATUS BOX-->
+        <img src="data/clock.png"> <!--CLOCK IMAGE HERE-->
         <div id="timer"></div> <!--TIME STATUS-->
-      </section>
+      </div>
 
-      <section id="player1Capture">
-        <p>Your captured pieces</p>
-        <div id='player1Pieces'>
+      <div id="captureBox"> <!--BOX INCLUDING CAPTURED PIECES-->
+
+        <!--YOUR CAPTURED PIECES-->
+        <div id="player1Capture">
+          <p>Your captured pieces</p>
+          <div id='player1Pieces'>
+
+          </div>
+        </div>
+
+        <!--OTHER CAPTURED PIECES-->
+        <div id="player2Capture">
+          <p>Opponent's captured pieces</p>
+          <div id='player2Pieces'>
 
         </div>
-      </section>
+      </div>
 
-      <section id="player2Capture">
-        <p>Opponent's captured pieces</p>
-        <div id='player2Pieces'>
+      </div>
 
-        </div>
-      </section>
-
-      <section id="bottomStatus">
-        <div id='turn'>It is <span>your</span> turn</div><!--IT IS YOUR/THE OPPONENTS TURN-->
-      </section>
-
+      <!--IT IS YOUR/THE OPPONENTS TURN-->
+      <div id="bottomStatus">
+        <div id='turn'>It is <span>your</span> turn</div>
+      </div>
 
     </main>
 
